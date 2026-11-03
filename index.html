@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finans Track Gizlilik Politikası</title>
+<meta name="description" content="Finans Track gizlilik politikası, KVKK aydınlatma metni ve hesap silme adımları.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --zemin: #F7F8FA;
+    --kart: #FFFFFF;
+    --yazi: #1B2430;
+    --soluk: #566273;
+    --cizgi: #DDE2E8;
+    --vurgu: #0F766E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --zemin: #11161C;
+      --kart: #1A2129;
+      --yazi: #E8ECF1;
+      --soluk: #A3AEBB;
+      --cizgi: #303A45;
+      --vurgu: #5EEAD4;
+        }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--zemin); color: var(--yazi); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 40px 0 8px; scroll-margin-top: 16px; }
+  p, ul { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--vurgu); }
+  .tarih { color: var(--soluk); margin-bottom: 20px; }
+  .kart { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .kart p:last-child, .kart ul:last-child { margin-bottom: 0; }
+  nav ul { list-style: none; padding: 0; margin: 0; }
+  .tablo { overflow-x: auto; border: 1px solid var(--cizgi); border-radius: 8px; background: var(--kart); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--cizgi); }
+  tr:last-child td { border-bottom: 0; }
+  th { color: var(--soluk); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Finans Track Gizlilik Politikası</h1>
+  <p class="tarih">KVKK aydınlatma metnini de içerir. Son güncelleme: 3 Kasım 2026</p>
+
+  <div class="kart">
+    <p><strong>Kısaca:</strong> Finans Track, girdiğin finans kayıtlarını ve fiş fotoğraflarını hesabınla saklar ve cihazların arasında eşitler. Verilerini satmayız, reklam için kullanmayız, reklam veya analiz aracı kullanmayız. Hesabını istediğin zaman <a href="#hesap-silme">silebilirsin</a>.</p>
+  </div>
+
+  <nav class="kart" aria-label="İçindekiler">
+    <ul>
+      <li><a href="#sorumlu">1. Veri sorumlusu</a></li>
+      <li><a href="#veriler">2. Topladığımız veriler</a></li>
+      <li><a href="#toplanmayanlar">3. Toplamadıklarımız ve cihaz izinleri</a></li>
+      <li><a href="#amaclar">4. Amaçlar ve hukuki sebepler</a></li>
+      <li><a href="#erisim">5. Verilere kimler erişebilir</a></li>
+      <li><a href="#yurt-disi">6. Yurt dışına aktarım</a></li>
+      <li><a href="#saklama">7. Saklama süreleri</a></li>
+      <li><a href="#hesap-silme">8. Hesabını ve verilerini silme</a></li>
+      <li><a href="#guvenlik">9. Güvenlik</a></li>
+      <li><a href="#haklar">10. KVKK kapsamındaki hakların</a></li>
+      <li><a href="#diger">11. Abonelik, yaş sınırı ve değişiklikler</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="sorumlu">1. Veri sorumlusu</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusu <strong>Samet Bora</strong>'dır.</p>
+  <ul>
+    <li>Konum: İstanbul, Türkiye</li>
+    <li>E-posta: <a href="mailto:sameetbr58@gmail.com">sameetbr58@gmail.com</a></li>
+  </ul>
+
+  <h2 id="veriler">2. Topladığımız veriler</h2>
+  <p>Veriler, uygulamadaki formlara yazdıkların ve seçtiğin fotoğraflarla, ayrıca hizmetin çalışması sırasında otomatik olarak toplanır.</p>
+  <div class="tablo">
+    <table>
+      <thead><tr><th scope="col">Veri</th><th scope="col">Ayrıntı</th><th scope="col">Nereye gider</th></tr></thead>
+      <tbody>
+        <tr><td>Hesap bilgileri</td><td>Ad, e-posta adresi, şifre. Şifren bize açık metin olarak görünmez.</td><td>Supabase</td></tr>
+        <tr><td>Harcama ve gelirler</td><td>Tutar, kategori veya kaynak, açıklama, tarih</td><td>Supabase ve cihazın</td></tr>
+        <tr><td>Bütçe ve planlama</td><td>Sabit giderler, abonelikler, hedefler, bütçeler, özel kategoriler, para birimi gibi ayarlar</td><td>Supabase ve cihazın</td></tr>
+        <tr><td>Fiş fotoğrafları</td><td>Eklemeyi seçtiğin fotoğraflar. Üzerinde mağaza, ürün veya başka bilgiler bulunabilir; yüklemeden önce kontrol etmeni öneririz.</td><td>Supabase ve cihazın</td></tr>
+        <tr><td>Teknik kayıtlar</td><td>IP adresi, istek zamanı ve benzeri bağlantı kayıtları</td><td>Supabase ve e-posta işlemlerinde Brevo</td></tr>
+        <tr><td>Hizmet e-postaları</td><td>E-posta adresin, onay veya şifre sıfırlama kodu içeren e-posta içeriği</td><td>Brevo</td></tr>
+        <tr><td>Abonelik bilgileri</td><td>Hesap kimliğin, satın aldığın plan, başlangıç ve yenilenme tarihleri, satın alma kayıtları. Kart bilgilerini Google işler, biz görmeyiz.</td><td>Google Play ve RevenueCat</td></tr>
+        <tr><td>Bildirim ve kilit ayarları</td><td>Hatırlatma tercihleri ve parmak izi, yüz tanıma gibi kilit tercihi</td><td>Yalnızca cihazın</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="toplanmayanlar">3. Toplamadıklarımız ve cihaz izinleri</h2>
+  <p>Konum, rehber, banka hesabı veya kart bilgisi istemeyiz. Uygulamada reklam, reklam kimliği takibi veya üçüncü taraf analiz aracı yoktur.</p>
+  <ul>
+    <li><strong>Kamera ve fotoğraflar:</strong> Yalnızca fiş eklemek istediğinde kullanılır.</li>
+    <li><strong>Bildirimler:</strong> Hatırlatmalar cihazında oluşturulur; bildirim içeriği için sunucuya veri gönderilmez.</li>
+    <li><strong>Biyometrik kilit:</strong> Doğrulamayı cihazının işletim sistemi yapar. Parmak izi veya yüz verine erişmeyiz.</li>
+    <li><strong>Dışa aktarma ve yedek:</strong> CSV, PDF veya yedek dosyaları yalnızca sen istediğinde oluşur. Dosyayı başka bir uygulamayla paylaşırsan, o uygulamanın kuralları geçerli olur.</li>
+  </ul>
+
+  <h2 id="amaclar">4. Amaçlar ve hukuki sebepler</h2>
+  <div class="tablo">
+    <table>
+      <thead><tr><th scope="col">Amaç</th><th scope="col">Hukuki sebep (KVKK m. 5/2)</th></tr></thead>
+      <tbody>
+        <tr><td>Hesap açmak, giriş sağlamak, e-postanı doğrulamak, şifre sıfırlamak</td><td>Sözleşmenin kurulması ve ifası (c)</td></tr>
+        <tr><td>Kayıtlarını ve fişlerini saklamak, cihazlar arasında eşitlemek, rapor ve grafik göstermek</td><td>Sözleşmenin kurulması ve ifası (c)</td></tr>
+        <tr><td>Aboneliği ve 7 günlük ücretsiz denemeyi yönetmek, üyelik durumunu doğrulamak</td><td>Sözleşmenin kurulması ve ifası (c)</td></tr>
+        <tr><td>Güvenliği sağlamak, kötüye kullanımı önlemek, hataları gidermek, destek vermek</td><td>Meşru menfaat (f)</td></tr>
+        <tr><td>Resmî makam taleplerini karşılamak</td><td>Hukuki yükümlülük (ç)</td></tr>
+        <tr><td>Bir uyuşmazlıkta hakları kullanmak veya korumak</td><td>Bir hakkın tesisi, kullanılması veya korunması (e)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="erisim">5. Verilere kimler erişebilir</h2>
+  <p>Verilerini satmayız ve pazarlama amacıyla kimseyle paylaşmayız. Erişim aşağıdakilerle sınırlıdır:</p>
+  <ul>
+    <li><strong>Sen:</strong> Yalnızca kendi hesabının verilerini görürsün.</li>
+    <li><strong>Hizmet yöneticisi:</strong> Yönetim panelinde yalnızca kullanıcıların adı, e-postası, katılım tarihi ve toplam kayıt sayısı görünür; tutarlar, açıklamalar ve fiş fotoğrafları görünmez. Veri sorumlusu, altyapı yönetim hesabıyla teknik olarak veritabanına erişebilir. Bu erişim yalnızca senin talebinle destek vermek, zorunlu teknik bakım yapmak, güvenlik olayını incelemek veya hukuki yükümlülüğü yerine getirmek için kullanılır.</li>
+    <li><strong>Supabase (Supabase Pte. Ltd. ve Supabase, Inc.):</strong> Hesap sistemi, veritabanı ve dosya depolama hizmetini bizim adımıza sağlar.</li>
+    <li><strong>Brevo (Sendinblue SAS):</strong> Onay ve şifre sıfırlama e-postalarını bizim adımıza gönderir.</li>
+    <li><strong>Google Play (Google):</strong> Abonelik ödemelerini alır ve aboneliğini yönetir. Bu işlemlerde Google'ın kendi gizlilik kuralları geçerlidir.</li>
+    <li><strong>RevenueCat (RevenueCat, Inc.):</strong> Üyelik durumunu bizim adımıza doğrular ve abonelik kayıtlarını tutar.</li>
+    <li><strong>Yetkili makamlar:</strong> Hukuken zorunlu olduğunda.</li>
+  </ul>
+  <p>Hizmet sağlayıcılar verileri yalnızca bu hizmetleri sunmak için işler.</p>
+
+  <h2 id="yurt-disi">6. Yurt dışına aktarım</h2>
+  <p>Hizmet sağlayıcıların sunucuları Türkiye dışında bulunduğu için verilerin yurt dışına aktarılır:</p>
+  <ul>
+    <li>Supabase: Veritabanı ve fiş fotoğrafları İrlanda'da (AB) tutulur. Teknik destek ve işletim için Singapur ve ABD'deki Supabase şirketleri erişebilir.</li>
+    <li>RevenueCat: Hesap kimliği ve abonelik kayıtları ABD'deki veri merkezlerinde tutulur.</li>
+    <li>Google: Abonelik ve ödeme bilgileri Google'ın kendi altyapısında ve kurallarına göre işlenir.</li>
+    <li>Brevo: E-posta adresi ve e-posta içeriği Avrupa Birliği'ndeki veri merkezlerinde (Fransa, Almanya, Belçika) işlenir.</li>
+  </ul>
+  <p>Bu aktarımlar, hizmet sağlayıcıların veri işleme sözleşmeleri ve bu sözleşmelerdeki güvenceler kapsamında, yalnızca hizmetin sunulması için yapılır. Sorularını yukarıdaki e-posta adresine iletebilirsin.</p>
+
+  <h2 id="saklama">7. Saklama süreleri</h2>
+  <ul>
+    <li><strong>Hesabın açık olduğu sürece:</strong> Hesap bilgilerin ve finans kayıtların saklanır.</li>
+    <li><strong>Sildiğin tek bir kayıt:</strong> Cihazlarından kalkar. Diğer cihazlarının da silmeyi algılayabilmesi için sunucuda "silindi" işaretiyle hesabını silene kadar durur. Kayda bağlı fiş fotoğrafı ise eşitleme sırasında sunucudan silinir.</li>
+    <li><strong>Hesabını sildiğinde:</strong> Hesabın, finans kayıtların ve fişlerin sunucudan hemen silinir.</li>
+    <li><strong>Supabase teknik kayıtları:</strong> Mevcut planda bağlantı kayıtları yaklaşık 1 gün, giriş kayıtları yaklaşık 1 saat tutulur.</li>
+    <li><strong>Brevo e-posta kayıtları:</strong> Gönderim kayıtları (alıcı adresi, konu, iletilme ve açılma durumu) 1 ay tutulur. E-postaların içeriği Brevo'da kayıt olarak saklanmaz.</li>
+    <li><strong>Abonelik ve satın alma kayıtları:</strong> Vergi ve muhasebe yükümlülükleri için mevzuatın gerektirdiği süre boyunca tutulabilir.</li>
+    <li><strong>Hukuki zorunluluk:</strong> Kanunen saklanması gereken veri olursa, yalnızca gereken süre boyunca tutulur.</li>
+    <li><strong>Dışa aktardığın dosyalar:</strong> Sana aittir, silinmeleri senin kontrolündedir.</li>
+  </ul>
+
+  <h2 id="hesap-silme">8. Finans Track hesabını ve verilerini silme</h2>
+  <div class="kart">
+    <p><strong>Uygulamadan silmek için:</strong></p>
+    <ul>
+      <li>Finans Track'i aç ve <strong>Ayarlar</strong> sekmesine gir.</li>
+      <li><strong>Hesabımı sil</strong>'e bas.</li>
+      <li>Şifreni yaz ve onayla.</li>
+    </ul>
+    <p><strong>Uygulaman yoksa:</strong> Hesabının e-posta adresinden <a href="mailto:sameetbr58@gmail.com">sameetbr58@gmail.com</a> adresine "Finans Track hesabımı silin" konulu bir e-posta gönder. Uygulamayı yeniden yüklemen gerekmez. Talebin kimliğini doğruladıktan sonra en geç 30 gün içinde sonuçlandırılır.</p>
+  </div>
+  <p><strong>Silinenler:</strong> Ad, e-posta, şifre, harcama, gelir, sabit gider, hedef, bütçe, kategori, ayar kayıtları ve fiş fotoğrafları. Cihazındaki yerel veriler de silinir.</p>
+  <p><strong>Kalabilecekler:</strong> Hizmet sağlayıcıların sınırlı süreli teknik kayıtları, Google Play ve RevenueCat'teki abonelik ve satın alma kayıtları (<a href="#saklama">bkz. saklama süreleri</a>) ve kendi aldığın yedek dosyaları.</p>
+  <p><strong>Aboneliğin varsa:</strong> Hesabı silmek Google Play aboneliğini iptal etmez. Yeniden ücretlendirilmemek için aboneliğini Google Play'den ayrıca iptal et.</p>
+  <p>Silme işlemi geri alınamaz.</p>
+
+  <h2 id="guvenlik">9. Güvenlik</h2>
+  <p>Uygulama ile sunucu arasındaki bağlantı şifrelenir (HTTPS). Veritabanı kuralları her kullanıcının yalnızca kendi kayıtlarına erişmesini sağlar, fiş fotoğrafları herkese açık olmayan bir alanda tutulur. Cihazındaki veriler için ekran kilidi kullanmanı öneririz. Hiçbir sistem tam güvenlik garantisi veremez; bir veri ihlali olursa KVKK'nın gerektirdiği bildirimleri yaparız.</p>
+
+  <h2 id="haklar">10. KVKK kapsamındaki hakların</h2>
+  <p>KVKK'nın 11. maddesi uyarınca şu haklara sahipsin:</p>
+  <ul>
+    <li>Kişisel verilerinin işlenip işlenmediğini öğrenmek ve işlenmişse bilgi istemek</li>
+    <li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenmek</li>
+    <li>Yurt içinde veya yurt dışında aktarıldığı kişileri bilmek</li>
+    <li>Eksik veya yanlış işlenmişse düzeltilmesini istemek</li>
+    <li>Kanundaki şartlarla silinmesini veya yok edilmesini istemek</li>
+    <li>Düzeltme ve silme işlemlerinin aktarılan kişilere bildirilmesini istemek</li>
+    <li>Yalnızca otomatik sistemlerle analiz edilmesi sonucu aleyhine çıkan bir sonuca itiraz etmek</li>
+    <li>Kanuna aykırı işleme nedeniyle zarara uğrarsan zararının giderilmesini istemek</li>
+  </ul>
+  <p>Başvurunu <a href="mailto:sameetbr58@gmail.com">sameetbr58@gmail.com</a> adresine yazabilirsin. Başvurular en geç 30 gün içinde yanıtlanır. Sonuçtan memnun kalmazsan Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsin.</p>
+
+  <h2 id="diger">11. Abonelik, yaş sınırı ve değişiklikler</h2>
+  <p>Abonelik fiyatları ve 7 günlük ücretsiz deneme koşulları satın almadan önce uygulamada gösterilir. Deneme bitmeden iptal etmezsen seçtiğin plan otomatik olarak ücretlendirilir. Aboneliğini istediğin zaman Google Play'den iptal edebilirsin.</p>
+  <p>Finans Track 18 yaşından küçükler için tasarlanmamıştır. Bu metin değişirse güncel sürüm bu sayfada yayınlanır ve üstteki tarih değişir; önemli değişiklikleri uygulama içinden veya e-postayla duyururuz.</p>
+</main>
+</body>
+</html>
